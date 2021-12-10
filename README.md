@@ -1,2 +1,3 @@
 # KaizenBurst
-Framework for Organisation Learning using Kaizen Burst philosophy
+Framework for Organisational Learning using Kaizen Burst philosophy
+## Development strategy
