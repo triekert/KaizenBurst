@@ -3,16 +3,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <Name>KaizenburstDb</Name>
+    <Name>KaizenBurstDb</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
-    <ProjectGuid>{c572356f-3af3-4109-be0c-af76ee05e659}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql140DatabaseSchemaProvider</DSP>
+    <ProjectGuid>{a754d14d-b2fa-4ade-8891-aab556f5beb9}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
-    <RootNamespace>KaizenburstDb</RootNamespace>
-    <AssemblyName>KaizenburstDb</AssemblyName>
+    <RootNamespace>KaizenBurstDb</RootNamespace>
+    <AssemblyName>KaizenBurstDb</AssemblyName>
     <ModelCollation>1033,CI</ModelCollation>
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>
@@ -23,65 +23,6 @@
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseSet>True</TargetDatabaseSet>
     <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
-    <AnsiNulls>False</AnsiNulls>
-    <QuotedIdentifier>False</QuotedIdentifier>
-    <QueryStoreCaptureMode>All</QueryStoreCaptureMode>
-    <QueryStoreDesiredState>Off</QueryStoreDesiredState>
-    <QueryStoreFlushInterval>900</QueryStoreFlushInterval>
-    <QueryStoreStatsInterval>60</QueryStoreStatsInterval>
-    <QueryStoreMaxPlansPerQuery>200</QueryStoreMaxPlansPerQuery>
-    <QueryStoreStaleQueryThreshold>30</QueryStoreStaleQueryThreshold>
-    <QueryStoreMaxStorageSize>100</QueryStoreMaxStorageSize>
-    <DbScopedConfigLegacyCardinalityEstimation>Off</DbScopedConfigLegacyCardinalityEstimation>
-    <DbScopedConfigMaxDOP>0</DbScopedConfigMaxDOP>
-    <DbScopedConfigParameterSniffing>On</DbScopedConfigParameterSniffing>
-    <DbScopedConfigOptimizerHotfixes>Off</DbScopedConfigOptimizerHotfixes>
-    <DelayedDurability>DISABLED</DelayedDurability>
-    <AutoCreateStatisticsIncremental>False</AutoCreateStatisticsIncremental>
-    <MemoryOptimizedElevateToSnapshot>False</MemoryOptimizedElevateToSnapshot>
-    <Containment>None</Containment>
-    <IsNestedTriggersOn>True</IsNestedTriggersOn>
-    <IsTransformNoiseWordsOn>False</IsTransformNoiseWordsOn>
-    <TwoDigitYearCutoff>2049</TwoDigitYearCutoff>
-    <NonTransactedFileStreamAccess>OFF</NonTransactedFileStreamAccess>
-    <TargetRecoveryTimePeriod>60</TargetRecoveryTimePeriod>
-    <TargetRecoveryTimeUnit>SECONDS</TargetRecoveryTimeUnit>
-    <IsChangeTrackingOn>False</IsChangeTrackingOn>
-    <IsChangeTrackingAutoCleanupOn>True</IsChangeTrackingAutoCleanupOn>
-    <ChangeTrackingRetentionPeriod>2</ChangeTrackingRetentionPeriod>
-    <ChangeTrackingRetentionUnit>Days</ChangeTrackingRetentionUnit>
-    <IsEncryptionOn>False</IsEncryptionOn>
-    <IsBrokerPriorityHonored>False</IsBrokerPriorityHonored>
-    <Trustworthy>False</Trustworthy>
-    <AutoUpdateStatisticsAsynchronously>False</AutoUpdateStatisticsAsynchronously>
-    <PageVerify>CHECKSUM</PageVerify>
-    <ServiceBrokerOption>DisableBroker</ServiceBrokerOption>
-    <DateCorrelationOptimizationOn>False</DateCorrelationOptimizationOn>
-    <Parameterization>SIMPLE</Parameterization>
-    <AllowSnapshotIsolation>False</AllowSnapshotIsolation>
-    <ReadCommittedSnapshot>False</ReadCommittedSnapshot>
-    <VardecimalStorageFormatOn>True</VardecimalStorageFormatOn>
-    <SupplementalLoggingOn>False</SupplementalLoggingOn>
-    <CompatibilityMode>140</CompatibilityMode>
-    <AnsiNullDefault>False</AnsiNullDefault>
-    <AnsiPadding>False</AnsiPadding>
-    <AnsiWarnings>False</AnsiWarnings>
-    <ArithAbort>False</ArithAbort>
-    <ConcatNullYieldsNull>False</ConcatNullYieldsNull>
-    <NumericRoundAbort>False</NumericRoundAbort>
-    <RecursiveTriggersEnabled>False</RecursiveTriggersEnabled>
-    <DatabaseChaining>False</DatabaseChaining>
-    <DatabaseState>ONLINE</DatabaseState>
-    <CloseCursorOnCommitEnabled>False</CloseCursorOnCommitEnabled>
-    <DefaultCursor>GLOBAL</DefaultCursor>
-    <AutoClose>False</AutoClose>
-    <AutoCreateStatistics>True</AutoCreateStatistics>
-    <AutoShrink>False</AutoShrink>
-    <AutoUpdateStatistics>True</AutoUpdateStatistics>
-    <TornPageDetection>False</TornPageDetection>
-    <DatabaseAccess>MULTI_USER</DatabaseAccess>
-    <Recovery>FULL</Recovery>
-    <EnableFullTextSearch>True</EnableFullTextSearch>
     <DefaultFilegroup>PRIMARY</DefaultFilegroup>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -132,428 +73,112 @@
     <Folder Include="Security\" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="dbo\Tables\TransTempCard.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Finance\Tables\InvestmentAccount.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Tables\TransTempAll.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Tables\Holdings-202104091614486_LACEYA SUSANNA RIEKERT_JSE.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Finance\Tables\InvestmentHoldings.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Finance\Tables\InvestementCategory.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Finance\Tables\Sector.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Tables\Recipients.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Tables\Holdings-202101131614486_LACEYA SUSANNA RIEKERT_JSE.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Finance\Tables\InvestmentHoldingsTransit.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Finance\Tables\InvestmentInstrumentPricing.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Finance\Tables\InvestmentTransactionsInterim.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Finance\Tables\InvestmentTransactionsProcessed.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Finance\Tables\FinActual.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Finance\Tables\FinActualDetail.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Finance\Tables\FinActualDetTemplate.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Tables\FinActualOld.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Finance\Tables\FinancialHierarchyOld.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Finance\Tables\InvestmentTransactionsTransit.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Tables\FinancialHierarchyNew.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Finance\Tables\FinBudget.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Finance\Tables\FinBudgetDetail.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Tables\Holdings-202012081614486_LACEYA SUSANNA RIEKERT_JSE.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Finance\Tables\FinCategorySearch.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Finance\Tables\FinTran.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Finance\Tables\FinVersion.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Tables\Icon.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Finance\Tables\Instrument.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Tables\ImagesStore.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Tables\Inv Transactions.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Finance\Tables\Inv Transactions a.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="DataIntegration\Tables\DB_Errors.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Finance\Tables\Inv Transactions c.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Tables\%27Transaction History_%27.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="DataIntegration\Tables\FileImport.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Tables\Meter.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="DataIntegration\Tables\ImportTypes.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Tables\MeterGroupAllocation.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Tables\MeterGrouping.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Tables\MeterReading.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Tables\MeterReadingDate.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Tables\MeterReadingsRough.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Tables\MeterReadingsRoughJuly12.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Tables\MeterReadingsRoughJuly20.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Tables\MeterReadingsRoughJuly27.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Tables\MeterReadingsRoughJuly6.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Tables\MeterReadingsRoughJune22.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Tables\MeterReadingsRoughJune29.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Tables\MeterTariff.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Tables\NersaTariff.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Tables\ParentChildCat.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Tables\Party.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Tables\ProjectHierarchy.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Tables\Property.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Tables\PropertyMeter.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Tables\Tre Donne transactionHistory.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Tables\Unbound descriptions.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Finance\Tables\FinancialHierarchy.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Finance\Tables\Holdings-202012121614486_LACEYA SUSANNA RIEKERT_JSE.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Finance\Tables\InvestmentTransactions.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Tables\AspNetRoleClaims.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Tables\AspNetRoles.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Tables\AspNetUserClaims.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Tables\AspNetUserLogins.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Tables\AspNetUserRoles.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Tables\AspNetUsers.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Tables\AspNetUserTokens.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Tables\Settings.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Finance\Tables\AssetType.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Finance\Tables\InvestmentTransactionType.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Finance\Tables\InvestmentAccountShareholder.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Finance\Tables\InvestmentAccountShareholderTransactions.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Finance\Views\vwFinHierarchy.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="DataIntegration\Views\vwFileImportStructure.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Functions\fnTblFinHierarch.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Finance\Stored Procedures\Prices_DisplayReadingsbyDate.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Finance\Stored Procedures\Holdings_DisplayValuebyDate.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="DataIntegration\Stored Procedures\spManageImportType.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="DataIntegration\Stored Procedures\spManageFileImportData.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Finance\Stored Procedures\ProcessActuals.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Finance\Stored Procedures\ProcessShareholdingChange.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Finance\Stored Procedures\CalculateShareholdingValue.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Finance\Stored Procedures\ProcessInvestmentTransactions.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Finance\Stored Procedures\RecordShareholderTransaction.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Finance\Stored Procedures\ClassifyTransactions.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Stored Procedures\AddMeterReadingsFromFile.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Finance\Stored Procedures\AddFinHierarchyNode.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Finance\Stored Procedures\AddFinHierarchyNodeFromTable.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Finance\Stored Procedures\CalcBudgetFirstPass.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Stored Procedures\CalculateConsumptionComparisonDetail.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Finance\Stored Procedures\RemoveFinHierarchyNode.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Stored Procedures\CalculateConsumptionVariance.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Finance\Stored Procedures\RemDupTransactions.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Stored Procedures\CalculateElectrical.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Finance\Stored Procedures\spFindInvalidCardFilter.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Finance\Stored Procedures\ProcessInvestmentHoldings.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Finance\Stored Procedures\DisplayActualDetails.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="DataIntegration\Stored Procedures\AddTransactionsFromFiles.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Finance\Stored Procedures\DisplayFinancialHierarchy.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Finance\Stored Procedures\DisplayFinancialHierarchyChildren.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Stored Procedures\ProcessActuals.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Stored Procedures\RemDupTransactions.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Stored Procedures\RemoveFinHierarchyNode.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Stored Procedures\RemRedundantSearches.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Stored Procedures\spFindInvalidCardFilter.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
+    <Build Include="dbo\Tables\TransTempCard.sql" />
+    <Build Include="Finance\Tables\InvestmentAccount.sql" />
+    <Build Include="dbo\Tables\TransTempAll.sql" />
+    <Build Include="dbo\Tables\Holdings-202104091614486_LACEYA SUSANNA RIEKERT_JSE.sql" />
+    <Build Include="Finance\Tables\InvestmentHoldings.sql" />
+    <Build Include="Finance\Tables\InvestementCategory.sql" />
+    <Build Include="Finance\Tables\Sector.sql" />
+    <Build Include="dbo\Tables\Recipients.sql" />
+    <Build Include="dbo\Tables\Holdings-202101131614486_LACEYA SUSANNA RIEKERT_JSE.sql" />
+    <Build Include="Finance\Tables\InvestmentHoldingsTransit.sql" />
+    <Build Include="Finance\Tables\InvestmentInstrumentPricing.sql" />
+    <Build Include="Finance\Tables\InvestmentTransactionsInterim.sql" />
+    <Build Include="Finance\Tables\InvestmentTransactionsProcessed.sql" />
+    <Build Include="Finance\Tables\FinActual.sql" />
+    <Build Include="Finance\Tables\FinActualDetail.sql" />
+    <Build Include="Finance\Tables\FinActualDetTemplate.sql" />
+    <Build Include="dbo\Tables\FinActualOld.sql" />
+    <Build Include="Finance\Tables\FinancialHierarchyOld.sql" />
+    <Build Include="Finance\Tables\InvestmentTransactionsTransit.sql" />
+    <Build Include="dbo\Tables\FinancialHierarchyNew.sql" />
+    <Build Include="Finance\Tables\FinBudget.sql" />
+    <Build Include="Finance\Tables\FinBudgetDetail.sql" />
+    <Build Include="dbo\Tables\Holdings-202012081614486_LACEYA SUSANNA RIEKERT_JSE.sql" />
+    <Build Include="Finance\Tables\FinCategorySearch.sql" />
+    <Build Include="Finance\Tables\FinTran.sql" />
+    <Build Include="Finance\Tables\FinVersion.sql" />
+    <Build Include="dbo\Tables\Icon.sql" />
+    <Build Include="Finance\Tables\Instrument.sql" />
+    <Build Include="dbo\Tables\ImagesStore.sql" />
+    <Build Include="dbo\Tables\Inv Transactions.sql" />
+    <Build Include="Finance\Tables\Inv Transactions a.sql" />
+    <Build Include="DataIntegration\Tables\DB_Errors.sql" />
+    <Build Include="Finance\Tables\Inv Transactions c.sql" />
+    <Build Include="dbo\Tables\%27Transaction History_%27.sql" />
+    <Build Include="DataIntegration\Tables\FileImport.sql" />
+    <Build Include="dbo\Tables\Meter.sql" />
+    <Build Include="DataIntegration\Tables\ImportTypes.sql" />
+    <Build Include="dbo\Tables\MeterGroupAllocation.sql" />
+    <Build Include="dbo\Tables\MeterGrouping.sql" />
+    <Build Include="dbo\Tables\MeterReading.sql" />
+    <Build Include="dbo\Tables\MeterReadingDate.sql" />
+    <Build Include="dbo\Tables\MeterReadingsRough.sql" />
+    <Build Include="dbo\Tables\MeterReadingsRoughJuly12.sql" />
+    <Build Include="dbo\Tables\MeterReadingsRoughJuly20.sql" />
+    <Build Include="dbo\Tables\MeterReadingsRoughJuly27.sql" />
+    <Build Include="dbo\Tables\MeterReadingsRoughJuly6.sql" />
+    <Build Include="dbo\Tables\MeterReadingsRoughJune22.sql" />
+    <Build Include="dbo\Tables\MeterReadingsRoughJune29.sql" />
+    <Build Include="dbo\Tables\MeterTariff.sql" />
+    <Build Include="dbo\Tables\NersaTariff.sql" />
+    <Build Include="dbo\Tables\ParentChildCat.sql" />
+    <Build Include="dbo\Tables\Party.sql" />
+    <Build Include="dbo\Tables\ProjectHierarchy.sql" />
+    <Build Include="dbo\Tables\Property.sql" />
+    <Build Include="dbo\Tables\PropertyMeter.sql" />
+    <Build Include="dbo\Tables\Tre Donne transactionHistory.sql" />
+    <Build Include="dbo\Tables\Unbound descriptions.sql" />
+    <Build Include="Finance\Tables\FinancialHierarchy.sql" />
+    <Build Include="Finance\Tables\Holdings-202012121614486_LACEYA SUSANNA RIEKERT_JSE.sql" />
+    <Build Include="Finance\Tables\InvestmentTransactions.sql" />
+    <Build Include="dbo\Tables\AspNetRoleClaims.sql" />
+    <Build Include="dbo\Tables\AspNetRoles.sql" />
+    <Build Include="dbo\Tables\AspNetUserClaims.sql" />
+    <Build Include="dbo\Tables\AspNetUserLogins.sql" />
+    <Build Include="dbo\Tables\AspNetUserRoles.sql" />
+    <Build Include="dbo\Tables\AspNetUsers.sql" />
+    <Build Include="dbo\Tables\AspNetUserTokens.sql" />
+    <Build Include="dbo\Tables\Settings.sql" />
+    <Build Include="Finance\Tables\AssetType.sql" />
+    <Build Include="Finance\Tables\InvestmentTransactionType.sql" />
+    <Build Include="Finance\Tables\InvestmentAccountShareholder.sql" />
+    <Build Include="Finance\Tables\InvestmentAccountShareholderTransactions.sql" />
+    <Build Include="Finance\Views\vwFinHierarchy.sql" />
+    <Build Include="DataIntegration\Views\vwFileImportStructure.sql" />
+    <Build Include="dbo\Functions\fnTblFinHierarch.sql" />
+    <Build Include="Finance\Stored Procedures\Prices_DisplayReadingsbyDate.sql" />
+    <Build Include="Finance\Stored Procedures\Holdings_DisplayValuebyDate.sql" />
+    <Build Include="DataIntegration\Stored Procedures\spManageImportType.sql" />
+    <Build Include="DataIntegration\Stored Procedures\spManageFileImportData.sql" />
+    <Build Include="Finance\Stored Procedures\ProcessActuals.sql" />
+    <Build Include="Finance\Stored Procedures\ProcessShareholdingChange.sql" />
+    <Build Include="Finance\Stored Procedures\CalculateShareholdingValue.sql" />
+    <Build Include="Finance\Stored Procedures\ProcessInvestmentTransactions.sql" />
+    <Build Include="Finance\Stored Procedures\RecordShareholderTransaction.sql" />
+    <Build Include="Finance\Stored Procedures\ClassifyTransactions.sql" />
+    <Build Include="dbo\Stored Procedures\AddMeterReadingsFromFile.sql" />
+    <Build Include="Finance\Stored Procedures\AddFinHierarchyNode.sql" />
+    <Build Include="Finance\Stored Procedures\AddFinHierarchyNodeFromTable.sql" />
+    <Build Include="Finance\Stored Procedures\CalcBudgetFirstPass.sql" />
+    <Build Include="dbo\Stored Procedures\CalculateConsumptionComparisonDetail.sql" />
+    <Build Include="Finance\Stored Procedures\RemoveFinHierarchyNode.sql" />
+    <Build Include="dbo\Stored Procedures\CalculateConsumptionVariance.sql" />
+    <Build Include="Finance\Stored Procedures\RemDupTransactions.sql" />
+    <Build Include="dbo\Stored Procedures\CalculateElectrical.sql" />
+    <Build Include="Finance\Stored Procedures\spFindInvalidCardFilter.sql" />
+    <Build Include="Finance\Stored Procedures\ProcessInvestmentHoldings.sql" />
+    <Build Include="Finance\Stored Procedures\DisplayActualDetails.sql" />
+    <Build Include="DataIntegration\Stored Procedures\AddTransactionsFromFiles.sql" />
+    <Build Include="Finance\Stored Procedures\DisplayFinancialHierarchy.sql" />
+    <Build Include="Finance\Stored Procedures\DisplayFinancialHierarchyChildren.sql" />
+    <Build Include="dbo\Stored Procedures\ProcessActuals.sql" />
+    <Build Include="dbo\Stored Procedures\RemDupTransactions.sql" />
+    <Build Include="dbo\Stored Procedures\RemoveFinHierarchyNode.sql" />
+    <Build Include="dbo\Stored Procedures\RemRedundantSearches.sql" />
+    <Build Include="dbo\Stored Procedures\spFindInvalidCardFilter.sql" />
     <Build Include="Security\DataIntegration.sql" />
     <Build Include="Security\Finance.sql" />
-    <Build Include="Security\Permissions.sql" />
   </ItemGroup>
 </Project>
