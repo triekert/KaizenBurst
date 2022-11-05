@@ -1,0 +1,8 @@
+C:\Users\triek\OneDrive\Documents\GitHub\KaizenBurst\KaizenBurstDb\bin\Debug\KaizenBurstDb.dacpac
+C:\Users\triek\OneDrive\Documents\GitHub\KaizenBurst\KaizenBurstDb\obj\Debug\KaizenBurstDb.sqlproj.AssemblyReference.cache
+C:\Users\triek\OneDrive\Documents\GitHub\KaizenBurst\KaizenBurstDb\obj\Debug\Model.xml
+C:\Users\triek\OneDrive\Documents\GitHub\KaizenBurst\KaizenBurstDb\obj\Debug\refactor.xml
+C:\Users\triek\OneDrive\Documents\GitHub\KaizenBurst\KaizenBurstDb\obj\Debug\postdeploy.sql
+C:\Users\triek\OneDrive\Documents\GitHub\KaizenBurst\KaizenBurstDb\obj\Debug\predeploy.sql
+C:\Users\triek\OneDrive\Documents\GitHub\KaizenBurst\KaizenBurstDb\obj\Debug\KaizenBurstDb.dll
+C:\Users\triek\OneDrive\Documents\GitHub\KaizenBurst\KaizenBurstDb\obj\Debug\KaizenBurstDb.pdb

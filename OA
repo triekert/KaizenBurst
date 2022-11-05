@@ -1,0 +1,29 @@
+[33mcommit 667e7eb33438475b87dd27f89a8e6864de490c03[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Tim Riekert <triekert@gmail.com>
+Date:   Sat Dec 11 02:10:01 2021 +0200
+
+    Database project update
+
+[33mcommit 79f246afb740ae63049ea47446b024264c2b9d3c[m
+Author: triekert <38797216+triekert@users.noreply.github.com>
+Date:   Sat Dec 11 01:23:01 2021 +0200
+
+    Expand ReadMe file
+
+[33mcommit a20dbe3a99df57a16ab300998805e4819933ae77[m
+Author: Tim Riekert <triekert@gmail.com>
+Date:   Sat Dec 11 00:56:23 2021 +0200
+
+    Importing Kaizen Database Structure
+
+[33mcommit 11293332077f9c624e236dfbdd1896448774c568[m
+Author: triekert <38797216+triekert@users.noreply.github.com>
+Date:   Fri Dec 10 23:46:56 2021 +0200
+
+    Update README.md
+
+[33mcommit 852d40d272711aa52d8d29bdb5bbc23633051209[m
+Author: triekert <38797216+triekert@users.noreply.github.com>
+Date:   Fri Dec 10 23:39:20 2021 +0200
+
+    Initial commit

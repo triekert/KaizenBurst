@@ -181,4 +181,10 @@
     <Build Include="Security\DataIntegration.sql" />
     <Build Include="Security\Finance.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Data.Services" />
+    <Reference Include="System.Data.Services.Design" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.Data.SqlXml" />
+  </ItemGroup>
 </Project>
